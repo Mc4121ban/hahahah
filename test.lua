@@ -3,7 +3,7 @@ getgenv().config = getgenv().config or {
 
   mode = 'Always',
   deflect_type = 'Remote',
-  notifications = true,
+  notifications = false,
   keybind = Enum.KeyCode.V
 }
 

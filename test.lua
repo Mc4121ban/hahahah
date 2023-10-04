@@ -1,5 +1,5 @@
 getgenv().config = getgenv().config or {
-  hit_time = 0.1,
+  hit_time = 0.12,
 
   mode = 'Always',
   deflect_type = 'Remote',

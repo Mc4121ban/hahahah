@@ -8,5 +8,5 @@ shared.config = {
    keybind = Enum.KeyCode.E
 }
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/testv1.lua'),true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/testv1.lua",true))()
 

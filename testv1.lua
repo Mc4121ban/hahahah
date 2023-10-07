@@ -114,11 +114,3 @@ end)
 
 getgenv().executed = true
 print('test')
-
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-OrionLib:MakeNotification({
-	Name = "Blade Ball | Auto Parry",
-	Content = "check",
-	Image = "rbxassetid://4483345998",
-	Time = 10
-})

@@ -16,7 +16,7 @@ local ATab = Window:MakeTab({
 
 ATab:AddLabel("Ấn Vào Press nha ae | lý do : để quay lại bản chính")
 
-Tab:AddButton({
+ATab:AddButton({
 	Name = "Press",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/hyb"))()

@@ -18,7 +18,7 @@ local BladeTab = Window:MakeTab({
 BladeTab:AddButton({
 	Name = "Anti Banned | 0.001% Banned",
 	Callback = function()
-      	loadstring(game:HttpGet(('https://paste.gg/p/anonymous/12e618b13e174f1ba76cce164a77c024/files/8e980ed968164aabbee28e852536a699/raw')))()
+      	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/anti')))()
   	end    
 })
 

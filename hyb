@@ -1,0 +1,63 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "doitenroi.9941", IntroEnabled = false, HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local BladeTab = Window:MakeTab({
+	Name = "Blade Ball",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = MainTab:AddSection({
+	Name = "Blade Ball"
+})
+
+BladeTab:AddButton({
+	Name = "Anti Banned | 0.001% Banned",
+	Callback = function()
+      	loadstring(game:HttpGet(('https://paste.gg/p/anonymous/12e618b13e174f1ba76cce164a77c024/files/8e980ed968164aabbee28e852536a699/raw')))()
+  	end    
+})
+
+BladeTab:AddButton({
+	Name = "Bedol",
+	Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/corre.lua')))()
+  	end    
+})
+
+BladeTab:AddButton({
+	Name = "Fps Boost",
+	Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/fpsboost')))()
+  	end    
+})
+
+BladeTab:AddButton({
+	Name = "Auto Parry",
+	Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/test.lua')))()
+  	end    
+})
+
+BladeTab:AddButton({
+	Name = "Bedol (Old)",
+	Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/thembunlonquaaaaa')))()
+  	end    
+})
+
+local BloxTab = Window:MakeTab({
+	Name = "Blox Fruit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+BloxTab:AddButton({
+	Name = "Blck Hub V2",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/onichanokaka'))()
+  	end    
+})
+
+
+

@@ -1,0 +1,53 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+OrionLib:MakeNotification({
+    Name = "Blade Ball | Anti Banned",
+    Content = "doitenroi.9941",
+    Image = "rbxassetid://4483345998",
+    Time = 8
+})
+
+local Window = OrionLib:MakeWindow({Name = "Back", IntroEnabled = false, HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local ATab = Window:MakeTab({
+	Name = "Vào Đây",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+ATab:AddLabel("Ấn Vào Press nha ae | lý do : để quay lại bản chính")
+
+Tab:AddButton({
+	Name = "Press",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/hyb"))()
+  	end    
+})
+
+local AdminList = {117902071, 70858520, 70858479, 5080868749, 91570186, 42610734, 1259863084, 562119831, 92821129, 103082327, 729774344, 4023785827, 203703651, 2443756424, 1182942453, 2674065562, 1084044411, 473894710, 2269489231, 2473766300, 1256638105, 1256638105, 239700438, 239700438, 61348859, 1200051779, 1244667473, 2024853456, 1498108334, 90615834, 14244412, 3892613913, 536683796, 122600647, 89711736, 102844738, 2404056357, 452271184, 1604372152, 269797905, 408836229, 139555816, 139555816, 998146523, 1028311032, 65254176, 2063713214, 303246915, 2322747048, 1092258342, 1520998249, 335179765, 479884301, 25735431, 1607891435, 28131272, 135312065, 932083, 75974130, 1989337178, 63920561, 4982944145, 51068360, 127306419, 174712729}
+local PrintUsernameOfPlayersJoining = true
+
+local function TeleportToPlace()
+
+local TeleportService = game:GetService("TeleportService")
+local GameID = game.PlaceId
+local PlayerToTeleport = game.Players.LocalPlayer
+
+end
+
+game.Players.PlayerAdded:Connect(function(PlayerAdded)
+
+if PrintUsernameOfPlayersJoining == true then
+print(PlayerAdded.Name .. " Has Joined The Game")
+end
+
+for index, value in pairs(AdminList) do
+
+if PlayerAdded.UserId == value then 
+game.Players.LocalPlayer:Kick("Anti Banned | More doitenroi.9941 Discord") 
+end
+
+end
+
+end)
+
+print('make by doitenroi.9941')

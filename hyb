@@ -51,7 +51,7 @@ BladeTab:AddButton({
 })
 
 BladeTab:AddButton({
-	Name = "Visualise",
+	Name = "Visual",
 	Callback = function()
       		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/visualise')))()
   	end    

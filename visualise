@@ -496,7 +496,7 @@ G2L["42"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["42"]["TextSize"] = 14;
 G2L["42"]["TextColor3"] = Color3.fromRGB(162, 162, 162);
 G2L["42"]["Size"] = UDim2.new(0.5, 0, 1, 0);
-G2L["42"]["Text"] = [[Auto Parry]];
+G2L["42"]["Text"] = [[Auto Parry | doitenroi.9941]];
 G2L["42"]["Name"] = [[SettingText]];
 G2L["42"]["BackgroundTransparency"] = 1;
 
@@ -572,7 +572,7 @@ G2L["4d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4d"]["TextSize"] = 14;
 G2L["4d"]["TextColor3"] = Color3.fromRGB(85, 85, 85);
 G2L["4d"]["Size"] = UDim2.new(0.23479770123958588, 0, 0.03727436065673828, 0);
-G2L["4d"]["Text"] = [[Auto Enabled]];
+G2L["4d"]["Text"] = [[Auto bat r thg ngu]];
 G2L["4d"]["Name"] = [[Test]];
 G2L["4d"]["BackgroundTransparency"] = 1;
 G2L["4d"]["Position"] = UDim2.new(0.353437602519989, 0, 0.2004828155040741, 0);

@@ -496,7 +496,7 @@ G2L["42"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["42"]["TextSize"] = 14;
 G2L["42"]["TextColor3"] = Color3.fromRGB(162, 162, 162);
 G2L["42"]["Size"] = UDim2.new(0.5, 0, 1, 0);
-G2L["42"]["Text"] = [[Auto Parry | doitenroi.9941]];
+G2L["42"]["Text"] = [[Auto Block]];
 G2L["42"]["Name"] = [[SettingText]];
 G2L["42"]["BackgroundTransparency"] = 1;
 

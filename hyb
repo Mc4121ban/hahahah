@@ -3,7 +3,7 @@ local Window = OrionLib:MakeWindow({Name = "doitenroi.9941", IntroEnabled = fals
 
 OrionLib:MakeNotification({
 	Name = "Hub",
-	Content = "bruh",
+	Content = "Script dead lolll",
 	Image = "rbxassetid://4483345998",
 	Time = 6
 })
@@ -23,7 +23,7 @@ BladeTab:AddButton({
 })
 
 BladeTab:AddButton({
-	Name = "Bedol",
+	Name = "Bedol(update)",
 	Callback = function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/corre.lua')))()
   	end    
@@ -37,7 +37,7 @@ BladeTab:AddButton({
 })
 
 BladeTab:AddButton({
-	Name = "Auto Parry",
+	Name = "Hosvlile | Auto Parry",
 	Callback = function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/test.lua')))()
   	end    
@@ -47,6 +47,20 @@ BladeTab:AddButton({
 	Name = "Bedol (Old)",
 	Callback = function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/thembunlonquaaaaa')))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Visualise",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/visualise')))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Nexus",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/loadstring"))()
   	end    
 })
 

@@ -50,14 +50,14 @@ BladeTab:AddButton({
   	end    
 })
 
-Tab:AddButton({
+BladeTab:AddButton({
 	Name = "Visualise",
 	Callback = function()
       		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/visualise')))()
   	end    
 })
 
-Tab:AddButton({
+BladeTab:AddButton({
 	Name = "Nexus",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/loadstring"))()

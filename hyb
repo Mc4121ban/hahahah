@@ -5,7 +5,7 @@ OrionLib:MakeNotification({
 	Name = "Hub",
 	Content = "Script dead lolll",
 	Image = "rbxassetid://4483345998",
-	Time = 6
+	Time = 3
 })
 
 local BladeTab = Window:MakeTab({
@@ -18,6 +18,13 @@ local BladeTab = Window:MakeTab({
 BladeTab:AddButton({
 	Name = "Anti Banned ( beta tester )",
 	Callback = function()
+        
+        OrionLib:MakeNotification({
+	Name = "Hub",
+	Content = "Anti Banned",
+	Image = "rbxassetid://4483345998",
+	Time = 3
+})
       	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/anti')))()
   	end    
 })

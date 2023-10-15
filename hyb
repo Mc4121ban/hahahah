@@ -92,7 +92,7 @@ BloxTab:AddButton({
 })
 
 BloxTab:AddButton({
-	Name = "Hoho Hub v3",
+	Name = "Hoho Hub",
 	Callback = function()
                  loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/main/ScriptLoad.lua'))() 
   	end    

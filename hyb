@@ -92,6 +92,14 @@ BloxTab:AddButton({
 })
 
 BloxTab:AddButton({
+	Name = "Hoho Hub v3",
+	Callback = function()
+		_G.HohoVersion = "v3"
+                 loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))() 
+  	end    
+})
+
+BloxTab:AddButton({
 	Name = "Hyper Hub",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/All-Script/main/bf.lua"))()

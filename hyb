@@ -2,7 +2,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "doitenroi.9941", IntroEnabled = false, HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 OrionLib:MakeNotification({
-	Name = "Hub",
+	Name = "doitenroi.9941",
 	Content = "Script dead lolll",
 	Image = "rbxassetid://4483345998",
 	Time = 3
@@ -102,6 +102,27 @@ BloxTab:AddButton({
 	Name = "Hyper Hub",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/All-Script/main/bf.lua"))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "Mukuro Hub",
+	Callback = function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "Adel Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/AdelOnTheTop/Adel-Hub/main/AdelBloxFruits.lua"))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "Memaybeo Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZPSXHUB/Z/main/MeMayBeo"))()
   	end    
 })
 

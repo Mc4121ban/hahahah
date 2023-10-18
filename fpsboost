@@ -1,4 +1,28 @@
-local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+repeat task.wait() until game:IsLoaded()
+if not game:IsLoaded() then game:IsLoaded():Wait(5) end
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+
+local WindowFocusReleasedFunction = function()
+    RunService:Set3dRenderingEnabled(false)
+    setfpscap(10)
+    return
+end
+
+local WindowFocusedFunction = function()
+    RunService:Set3dRenderingEnabled(true)
+    setfpscap(10)
+    return
+end
+
+local Initialize = function()
+    UserInputService.WindowFocusReleased:Connect(WindowFocusReleasedFunction)
+    UserInputService.WindowFocused:Connect(WindowFocusedFunction)
+    return
+end
+Initialize()
+UserSettings():GetService("UserGameSettings").MasterVolume = 0
+local decalsyeeted = true
 local g = game
 local w = g.Workspace
 local l = g.Lighting
@@ -33,9 +57,9 @@ for i, v in pairs(w:GetDescendants()) do
     elseif v:IsA("SpecialMesh") and decalsyeeted  then
         v.TextureId=0
     elseif v:IsA("ShirtGraphic") and decalsyeeted then
-        v.Graphic=0
+        v.Graphic=1
     elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
-        v[v.ClassName.."Template"]=0
+        v[v.ClassName.."Template"]=1
     end
 end
 for i = 1,#l:GetChildren() do
@@ -45,7 +69,6 @@ for i = 1,#l:GetChildren() do
     end
 end
 w.DescendantAdded:Connect(function(v)
-    wait()--prevent errors and shit
    if v:IsA("BasePart") and not v:IsA("MeshPart") then
         v.Material = "Plastic"
         v.Reflectance = 0
@@ -65,8 +88,8 @@ w.DescendantAdded:Connect(function(v)
     elseif v:IsA("SpecialMesh") and decalsyeeted then
         v.TextureId=0
     elseif v:IsA("ShirtGraphic") and decalsyeeted then
-        v.ShirtGraphic=0
+        v.ShirtGraphic=1
     elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
-        v[v.ClassName.."Template"]=0
-    end
-end)
+        v[v.ClassName.."Template"]=1
+            end
+        end)

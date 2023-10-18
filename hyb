@@ -15,7 +15,7 @@ local BladeTab = Window:MakeTab({
 })
 
 BladeTab:AddButton({
-	Name = "SadlekAski | Free emote",
+	Name = "SadlekAski Script",
 	Callback = function()
       		loadstring(game:HttpGet("https://github.com/SadlekAski/Scripts/raw/main/Blade%20Ball/Equip%20any%20ability.lua"))()
   	end    
@@ -225,5 +225,31 @@ OrionLib:MakeNotification({
 	Time = 5
 })  		
 setclipboard("https://discord.gg/bg3a7zESj4")
+  	end    
+})
+
+CreTab:AddButton({
+	Name = "summon0854 discord | click copy",
+	Callback = function()
+OrionLib:MakeNotification({
+	Name = "Loader",
+	Content = "Copy done",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})  		
+setclipboard("https://discord.gg/7TeG7AeGrT")
+  	end    
+})
+
+CreTab:AddButton({
+	Name = "dxuanb2988 discord | click copy",
+	Callback = function()
+OrionLib:MakeNotification({
+	Name = "Loader",
+	Content = "Copy done",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})  		
+setclipboard("https://discord.gg/uNt6d2Ksyz")
   	end    
 })

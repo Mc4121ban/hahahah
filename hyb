@@ -140,6 +140,13 @@ HazeTab:AddButton({
 })
 
 HazeTab:AddButton({
+	Name = "Ko bt script j",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/boku%20no%20pico"))()
+  	end    
+})
+
+HazeTab:AddButton({
 	Name = "Hyper Hub",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/All-Script/main/hp.lua"))()

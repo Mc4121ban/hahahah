@@ -15,6 +15,13 @@ local BladeTab = Window:MakeTab({
 })
 
 BladeTab:AddButton({
+	Name = "Nokey | SadleAski script",
+	Callback = function()
+      		loadstring(game:HttpGet(("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/loadermm"))()
+  	end    
+})
+
+BladeTab:AddButton({
 	Name = "Hosvile | spam",
 	Callback = function()
       		getgenv().SpamSpeed = 1

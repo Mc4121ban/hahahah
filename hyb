@@ -17,7 +17,7 @@ local BladeTab = Window:MakeTab({
 BladeTab:AddButton({
 	Name = "Nokey | SadleAski script",
 	Callback = function()
-      		loadstring(game:HttpGet(("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/loadermm"))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/loadermm"))()
   	end    
 })
 

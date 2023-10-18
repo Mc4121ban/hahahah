@@ -14,6 +14,12 @@ local BladeTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+BladeTab:AddButton({
+	Name = "SadlekAski | Free emote",
+	Callback = function()
+      		loadstring(game:HttpGet("https://github.com/SadlekAski/Scripts/raw/main/Blade%20Ball/Equip%20any%20ability.lua"))()
+  	end    
+})
 
 BladeTab:AddButton({
 	Name = "Anti Banned ( beta tester )",
@@ -199,3 +205,25 @@ FruitTab:AddButton({
   	end    
 })
 
+local CreTab = Window:MakeTab({
+	Name = "Credit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+CreTab:AddLabel("Script Loader : doitenroi.9941")
+CreTab:AddLabel("And script in loader in my discord server and my friend")
+CreTab:AddLabel("Discord:")
+
+CreTab:AddButton({
+	Name = "My discord | click copy",
+	Callback = function()
+OrionLib:MakeNotification({
+	Name = "Loader",
+	Content = "Copy done",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})  		
+setclipboard("https://discord.gg/bg3a7zESj4")
+  	end    
+})

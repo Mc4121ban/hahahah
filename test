@@ -1,0 +1,26 @@
+getgenv().key = ""
+local correctkey = "76F7A0CB65A1E192A0A4E33200AFDB821C34C03DA54BC272B171B40ADCFF7A133B"
+
+if not isfile("cheetokey.txt") then
+writefile("cheetokey.txt",getgenv().key)
+end
+
+if isfile("cheetokey.txt")  then
+   local content =  readfile("cheetokey.txt")
+
+   if content == "76F7A0CB65A1E192A0A4E33200AFDB821C34C03DA54BC272B171B40ADCFF7A133B" or getgenv().key == "76F7A0CB65A1E192A0A4E33200AFDB821C34C03DA54BC272B171B40ADC7A133B" and getgenv().key ~= "" then
+       correctkey = "yes"
+       writefile("cheetokey.txt",getgenv().key)
+       print('Correct Key')
+       else
+           if content ~= "76F7A0CB65A1E192A0A4E33200AFDB821C34C03DA54BC272B171B40ADC7A133B" and getgenv().key ~= "" then
+           print("Incorrect Key")
+           correctkey = "no"
+       end
+   end
+end
+
+if correctkey == "yes" then
+   writefile("cheetokey.txt","76F7A0CB65A1E192A0A4E33200AFDB821C34C03DA54BC272B171B40ADC7A133B")
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/hyb')))()
+end 

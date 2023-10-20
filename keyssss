@@ -21,7 +21,7 @@ local Window = Rayfield:CreateWindow({
       FileName = "Kiwikiwi",
       SaveKey = true,
       GrabKeyFromSite = true,
-      Key = {"https://raw.githubusercontent.com/Mc4121ban/hahahah/main/BedolIsNotGood"%7D 
+      Key = {"https://raw.githubusercontent.com/Mc4121ban/hahahah/main/BedolIsNotGood"}
    }
 })
 

@@ -277,6 +277,19 @@ FruitTab:AddButton({
   	end    
 })
 
+local RogueTab = Window:MakeTab({
+	Name = "Rogue Demon",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+RogueTab:AddButton({
+	Name = "deo bt script j test thu di",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyouranya/free/main/roguedemon.lua'),true))()
+  	end    
+})
+
 local CreTab = Window:MakeTab({
 	Name = "Credit",
 	Icon = "rbxassetid://4483345998",

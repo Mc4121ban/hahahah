@@ -239,6 +239,20 @@ ACSTab:AddButton({
   	end    
 })
 
+ACSTab:AddButton({
+	Name = "Yuto",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Binintrozza/yutv2e/main/ACS"))()
+  	end    
+})
+
+ACSTab:AddButton({
+	Name = "Skyhub",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/SKOIXLL/RIVERHUB-SKYHUB/main/WL.lua'))()
+  	end    
+})
+
 local ADTab = Window:MakeTab({
 	Name = "Anime Adventures",
 	Icon = "rbxassetid://4483345998",

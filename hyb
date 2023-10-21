@@ -357,13 +357,6 @@ local ACSTab = Window:MakeTab({
 })
 
 ACSTab:AddButton({
-	Name = "LOLKING | Script",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Champions/main/Anime12"))()
-  	end    
-})
-
-ACSTab:AddButton({
 	Name = "NameLess | script",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/NamelessScripts/anime/main/champion"))()

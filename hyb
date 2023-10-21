@@ -303,7 +303,7 @@ BattleTab:AddButton({
   	end    
 })
 
-Tab:AddLabel("Wait No Out Is not crash game")
+BattleTab:AddLabel("Wait No Out Is not crash game")
 
 local CreTab = Window:MakeTab({
 	Name = "Credit",

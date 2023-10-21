@@ -219,6 +219,26 @@ BloxTab:AddButton({
   	end    
 })
 
+local ADTab = Window:MakeTab({
+	Name = "Anime Adventures",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+ADTab:AddButton({
+	Name = "ArponAG | V1",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZPSXHUB/Z/main/MeMayBeo"))()
+  	end    
+})
+
+ADTab:AddButton({
+	Name = "ArponAG | V2",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures_v2__Beta.lua"))()
+  	end    
+})
+
 local HazeTab = Window:MakeTab({
 	Name = "Haze Piece",
 	Icon = "rbxassetid://4483345998",

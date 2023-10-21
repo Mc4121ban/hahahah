@@ -220,9 +220,23 @@ BloxTab:AddButton({
 })
 
 local ADTab = Window:MakeTab({
-	Name = "Anime Adventures",
+	Name = "Anime Champions Simulator",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
+})
+
+ACSTab:AddButton({
+	Name = "LOLKING | Script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Champions/main/Anime12"))()
+  	end    
+})
+
+ACSTab:AddButton({
+	Name = "ArponAG | V1",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/NamelessScripts/anime/main/champion"))()
+  	end    
 })
 
 ADTab:AddButton({

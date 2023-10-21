@@ -171,6 +171,32 @@ BladeTab:AddButton({
   	end    
 })
 
+local MMTab = Window:MakeTab({
+	Name = "Murder Mystery 2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+MMTab:AddButton({
+	Name = "Psxvoidyx",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Psxvoidyx/Murdermysvoid2/main/Darkxyz23'),true))()
+  	end    
+})
+
+local WSDTab = Window:MakeTab({
+	Name = "Weird Strict Dad",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+WSDTab:AddButton({
+	Name = "InfinityMercury | script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/InfinityMercury/Scripts/main/WeirdStrictDad/loader.lua",true))()
+  	end    
+})
+
 local BloxTab = Window:MakeTab({
 	Name = "Blox Fruit",
 	Icon = "rbxassetid://4483345998",
@@ -216,6 +242,98 @@ BloxTab:AddButton({
 	Name = "Memaybeo Hub",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZPSXHUB/Z/main/MeMayBeo"))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "MinhTriett | script",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "MinGamming | script",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGaming_MM.lua"))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "Min Vietsub | script",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/MinVietsub'))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "BF menu | script",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/TUPERX/TUPERX/Main/MenuBF/README.md'))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "Sara Hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/SaraSenpai/bloxfruist/main/Sarahub'))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "Tu Lam | script",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tulam2000/Min/main/Mindeptrai"))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "Loli hub v2",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyber-Nonename/LoliHubV2/main/V2LoliHub"))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "Fruit Finder",
+	Callback = function()
+		collectAllFruit = true
+                collectOnlyFruitSpawn = false
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/BetaFruitFinder"))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "HoHo V2",
+	Callback = function()
+             loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/main/OldScriptLoad'))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "KayMobile | script",
+	Callback = function()
+             loadstring(game:HttpGet('https://raw.githubusercontent.com/AXCScript/KayMobile/main/Script-Loader'))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "Auto Chest",
+	Callback = function()
+             _G.Settings = {
+    Main = {
+        ["Start Auto Chest"] = true,
+        ["Stop Only Have Dark Key and God's Chaile"] = true,
+    },
+}
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/NIGHTHUBONTOP/Main/main/AutoChest.lua')))()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "Auto Chest QR",
+	Callback = function()
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/qrquet/main/AutochesstVipQR"))()
   	end    
 })
 

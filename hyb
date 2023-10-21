@@ -290,6 +290,21 @@ RogueTab:AddButton({
   	end    
 })
 
+local BattleTab = Window:MakeTab({
+	Name = "Fruit Battlegrounds",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+BattleTab:AddButton({
+	Name = "JumbleBumble",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/JumbleBumble/Scripts/main/FruitBattlegrounds.lua"))()
+  	end    
+})
+
+Tab:AddLabel("Wait No Out Is not crash game")
+
 local CreTab = Window:MakeTab({
 	Name = "Credit",
 	Icon = "rbxassetid://4483345998",

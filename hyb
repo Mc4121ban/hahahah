@@ -219,6 +219,19 @@ BloxTab:AddButton({
   	end    
 })
 
+local FTab = Window:MakeTab({
+	Name = "Funky Friday",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+FTab:AddButton({
+	Name = "Auto Play",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/RandomScript/main/FunkyFridayMobile"))()
+  	end    
+})
+
 local ACSTab = Window:MakeTab({
 	Name = "Anime Champions Simulator",
 	Icon = "rbxassetid://4483345998",

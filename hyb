@@ -219,7 +219,7 @@ BloxTab:AddButton({
   	end    
 })
 
-local ADTab = Window:MakeTab({
+local ACSTab = Window:MakeTab({
 	Name = "Anime Champions Simulator",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -239,10 +239,16 @@ ACSTab:AddButton({
   	end    
 })
 
+local ADTab = Window:MakeTab({
+	Name = "Anime Adventures",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 ADTab:AddButton({
 	Name = "ArponAG | V1",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZPSXHUB/Z/main/MeMayBeo"))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua"))()
   	end    
 })
 

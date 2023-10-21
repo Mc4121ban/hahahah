@@ -306,32 +306,6 @@ KingTab:AddButton({
   	end    
 })
 
-local PixelTab = Window:MakeTab({
-	Name = "Pixel Piece",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-PixelTab:AddButton({
-	Name = "Hyper Hub",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/All-Script/main/pp.lua"))()
-  	end    
-})
-
-local FruitTab = Window:MakeTab({
-	Name = "Fruit Warriors",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-FruitTab:AddButton({
-	Name = "Hyper Hub",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/All-Script/main/fw.lua"))()
-  	end    
-})
-
 local RogueTab = Window:MakeTab({
 	Name = "Rogue Demon",
 	Icon = "rbxassetid://4483345998",

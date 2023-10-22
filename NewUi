@@ -86,7 +86,7 @@ end)
 
 local BF = serv:Channel("Blox Fruit")
 
-BF:Button("Blck Hub V2", function()
+BF:Button("Master Hub", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/onichanokaka'))()
 end)
 

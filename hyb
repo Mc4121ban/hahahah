@@ -184,6 +184,22 @@ MMTab:AddButton({
   	end    
 })
 
+MMTab:AddButton({
+	Name = "Vynixu",
+	Callback = function()
+      		loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+  	end    
+})
+
+MMTab:AddButton({
+	Name = "Eclipse Hub",
+	Callback = function()
+        getgenv().mainKey = "nil";
+ 
+        local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+  	end    
+})
+
 local WSDTab = Window:MakeTab({
 	Name = "Weird Strict Dad",
 	Icon = "rbxassetid://4483345998",
@@ -228,6 +244,13 @@ BloxTab:AddButton({
 	Name = "Mukuro Hub",
 	Callback = function()
 		loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+  	end    
+})
+
+BloxTab:AddButton({
+	Name = "Crimson Hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/TirSANX/CrimsonHUB/main/C_Loader'))()
   	end    
 })
 
@@ -431,6 +454,19 @@ HazeTab:AddButton({
   	end    
 })
 
+local CWTab = Window:MakeTab({
+	Name = "Combat Warriors",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "IsaaaKK | script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/IsaaaKK/cwhb/main/cw.txt"))()
+  	end    
+})
+
 local KingTab = Window:MakeTab({
 	Name = "King Legacy",
 	Icon = "rbxassetid://4483345998",
@@ -483,7 +519,7 @@ CreTab:AddLabel("And script in loader in my discord server and my friend")
 CreTab:AddLabel("Discord:")
 
 CreTab:AddButton({
-	Name = "My discord | click copy",
+	Name = "My new discord | click copy",
 	Callback = function()
 OrionLib:MakeNotification({
 	Name = "Loader",
@@ -491,32 +527,6 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })  		
-setclipboard("https://discord.gg/bg3a7zESj4")
-  	end    
-})
-
-CreTab:AddButton({
-	Name = "summon0854 discord | click copy",
-	Callback = function()
-OrionLib:MakeNotification({
-	Name = "Loader",
-	Content = "Copy done",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})  		
-setclipboard("https://discord.gg/7TeG7AeGrT")
-  	end    
-})
-
-CreTab:AddButton({
-	Name = "dxuanb2988 discord | click copy",
-	Callback = function()
-OrionLib:MakeNotification({
-	Name = "Loader",
-	Content = "Copy done",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})  		
-setclipboard("https://discord.gg/uNt6d2Ksyz")
+setclipboard("https://discord.gg/TajXNVBn4Q")
   	end    
 })

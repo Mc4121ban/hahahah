@@ -86,63 +86,59 @@ end)
 
 local BF = serv:Channel("Blox Fruit")
 
-BF:Button("Blck Hub V2", function()
+BF:Button("Master Hub", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/onichanokaka'))()
-end)
-
-BF:Button("Hoho Hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HohoV2/main/ScriptLoad.lua"))()
 end)
 
 BF:Button("Hyper Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/All-Script/main/bf.lua"))()
 end)
 
-BF:Button("Mukuro Hub", function()
+BF:Button("Mukuro Hub | Not Test", function()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
 end)
 
-BF:Button("Crimson Hub", function()
+BF:Button("Crimson Hub | Error", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/TirSANX/CrimsonHUB/main/C_Loader'))()
 end)
 
-BF:Button("Adel Hub", function()
+BF:Button("Adel Hub | Error", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/AdelOnTheTop/Adel-Hub/main/AdelBloxFruits.lua"))()
 end)
 
-BF:Button("Memaybeo Hub", function()
+BF:Button("Memaybeo Hub | Error", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ZPSXHUB/Z/main/MeMayBeo"))()
 end)
 
-BF:Button("MinhTriett | script", function()
+BF:Button("MinhTriett | Error", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
 end)
 
-BF:Button("MinGamming | script", function()
+BF:Button("MinGamming | Error", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGaming_MM.lua"))()
 end)
 
-BF:Button("Min Vietsub | script", function()
+BF:Button("Min Vietsub | Error", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/MinVietsub'))()
 end)
 
-BF:Button("BF Menu | script", function()
+BF:Button("BF Menu | Error", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/TUPERX/TUPERX/Main/MenuBF/README.md'))()
 end)
 
-BF:Button("Sara Hub", function()
+BF:Button("Sara Hub | Error", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/SaraSenpai/bloxfruist/main/Sarahub'))()
 end)
 
-BF:Button("Tulam2000 | script", function()
+BF:Button("Tulam2000 | Error", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tulam2000/Min/main/Mindeptrai"))()
 end)
 
-BF:Button("Loli Hub V2", function()
+BF:Button("Loli Hub V2 | Error", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyber-Nonename/LoliHubV2/main/V2LoliHub"))()
 end)
 
-BF:Button("Fruit Finder", function()
+BF:Button("Fruit Finder | Not test", function()
 collectAllFruit = true
 collectOnlyFruitSpawn = false
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/BetaFruitFinder"))()
@@ -152,11 +148,11 @@ BF:Button("HoHo V2", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/main/OldScriptLoad'))()
 end)
 
-BF:Button("KayMobile | script", function()
+BF:Button("KayMobile | Error", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/AXCScript/KayMobile/main/Script-Loader'))()
 end)
 
-BF:Button("Auto Chest", function()
+BF:Button("Auto Chest | Not test", function()
     _G.Settings = {
         Main = {
             ["Start Auto Chest"] = true,
@@ -166,7 +162,7 @@ BF:Button("Auto Chest", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/NIGHTHUBONTOP/Main/main/AutoChest.lua')))()
 end)
 
-BF:Button("Auto Chest QR", function()
+BF:Button("Auto Chest QR | Not test", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/qrquet/main/AutochesstVipQR"))()
 end)
 

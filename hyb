@@ -10,6 +10,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Old Ui ( stop update )",
 	Callback = function()
+                OrionLib:Destroy()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/OldUi"))()
   	end    
 })
@@ -17,6 +18,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "New Ui",
 	Callback = function()
+                OrionLib:Destroy()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/NewUi"))()
   	end    
 })

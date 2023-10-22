@@ -102,11 +102,11 @@ BF:Button("Mukuro Hub", function()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
 end)
 
-BF:Button("Crimson Hub", function()
+BF:Button("Crimson Hub | Error", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/TirSANX/CrimsonHUB/main/C_Loader'))()
 end)
 
-BF:Button("Adel Hub", function()
+BF:Button("Adel Hub | Error", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/AdelOnTheTop/Adel-Hub/main/AdelBloxFruits.lua"))()
 end)
 

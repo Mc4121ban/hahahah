@@ -172,7 +172,7 @@ end)
 
 local F = serv:Channel("Funky Friday")
 
-BF:Button("Auto Play", function()
+F:Button("Auto Play", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/RandomScript/main/FunkyFridayMobile"))()
 end)
 

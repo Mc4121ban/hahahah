@@ -178,7 +178,7 @@ ACS:Button("NameLess | Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NamelessScripts/anime/main/champion"))()
     end)
 
- CS:Button("YuTo", function()
+ACS:Button("YuTo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Binintrozza/yutv2e/main/ACS"))()
 end)
 

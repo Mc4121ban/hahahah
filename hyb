@@ -460,7 +460,7 @@ local CWTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddButton({
+CWTab:AddButton({
 	Name = "IsaaaKK | script",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/IsaaaKK/cwhb/main/cw.txt"))()

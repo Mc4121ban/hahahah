@@ -86,11 +86,6 @@ end)
 
 local BF = serv:Channel("Blox Fruit")
 
-BF:Button("Vector Hub", function()
-_G.Mode = "English"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Tuxoz/VectorHub/main/MB*PC.lua"))()    
-end)
-
 BF:Button("Blck Hub V2", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/onichanokaka'))()
 end)
@@ -123,27 +118,27 @@ BF:Button("MinhTriett | script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
 end)
 
-BF:Button("MinGamming | Error", function()
+BF:Button("MinGamming | script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGaming_MM.lua"))()
 end)
 
-BF:Button("Min Vietsub | Error", function()
+BF:Button("Min Vietsub | script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/MinVietsub'))()
 end)
 
-BF:Button("BF Menu | Error", function()
+BF:Button("BF Menu | script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/TUPERX/TUPERX/Main/MenuBF/README.md'))()
 end)
 
-BF:Button("Sara Hub | error", function()
+BF:Button("Sara Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/SaraSenpai/bloxfruist/main/Sarahub'))()
 end)
 
-BF:Button("Tulam2000 | error", function()
+BF:Button("Tulam2000 | script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tulam2000/Min/main/Mindeptrai"))()
 end)
 
-BF:Button("Loli Hub V2 | error", function()
+BF:Button("Loli Hub V2", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyber-Nonename/LoliHubV2/main/V2LoliHub"))()
 end)
 
@@ -157,7 +152,7 @@ BF:Button("HoHo V2", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/main/OldScriptLoad'))()
 end)
 
-BF:Button("KayMobile | Patch", function()
+BF:Button("KayMobile | script", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/AXCScript/KayMobile/main/Script-Loader'))()
 end)
 
@@ -303,23 +298,23 @@ BF:Button("MinhTriett | script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
 end)
 
-BF:Button("MinGamming | script", function()
+BF:Button("MinGamming | error", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGaming_MM.lua"))()
 end)
 
-BF:Button("Min Vietsub | script", function()
+BF:Button("Min Vietsub | error", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/MinVietsub'))()
 end)
 
-BF:Button("BF Menu | script", function()
+BF:Button("BF Menu | error", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/TUPERX/TUPERX/Main/MenuBF/README.md'))()
 end)
 
-BF:Button("Tulam2000 | script", function()
+BF:Button("Tulam2000 | error", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tulam2000/Min/main/Mindeptrai"))()
 end)
 
-BF:Button("Loli Hub V2", function()
+BF:Button("Loli Hub V2 | Error", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyber-Nonename/LoliHubV2/main/V2LoliHub"))()
 end)
 
@@ -333,7 +328,7 @@ BF:Button("HoHo V2", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/main/OldScriptLoad'))()
 end)
 
-BF:Button("KayMobile | script", function()
+BF:Button("KayMobile | Patch", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/AXCScript/KayMobile/main/Script-Loader'))()
 end)
 
@@ -389,18 +384,7 @@ AD:Button("ArponAG | V1", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua"))()
 end)
 
-local SB = serv:Channel("Sorcerer Battlegrounds")
-
-SB:Button("xtrey10x Hub", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/Sorcerer%20Battlegrounds"))()
-end)
-
 local Haze = serv:Channel("Haze Piece")
-
-Haze:Button("Vector Hub", function()
-_G.Mode = "English"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Tuxoz/VectorHub/main/MB*PC.lua"))()  
-end)
 
 Haze:Button("Fazium", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Fazium-files/main/Loader"))()

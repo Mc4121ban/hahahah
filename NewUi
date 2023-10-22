@@ -86,7 +86,7 @@ end)
 
 local BF = serv:Channel("Blox Fruit")
 
-BF:Button("Master Hub", function()
+BF:Button("Blck Hub V2", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/onichanokaka'))()
 end)
 
@@ -102,11 +102,11 @@ BF:Button("Mukuro Hub", function()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
 end)
 
-BF:Button("Crimson Hub | Error", function()
+BF:Button("Crimson Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/TirSANX/CrimsonHUB/main/C_Loader'))()
 end)
 
-BF:Button("Adel Hub | Error", function()
+BF:Button("Adel Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/AdelOnTheTop/Adel-Hub/main/AdelBloxFruits.lua"))()
 end)
 
@@ -178,200 +178,12 @@ end)
 
 local ACS = serv:Channel("Anime Champions Simulator")
 
-local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+ACS:Button("NameLess | Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NamelessScripts/anime/main/champion"))()
+    end)
 
-local win = DiscordLib:Window("doitenroi.9941 | New Ui")
-
-local serv = win:Server("Main", "")
-
-local Blade = serv:Channel("Blade Ball")
-
-Blade:Button("Allusive | Free", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/AllusiveFree"))()
-end)
-
-Blade:Button("Nokey | SadleAski script", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/loadermm"))()
-end)
-
-Blade:Button("Hosvile | spam", function()
-getgenv().SpamSpeed = 1
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Spam",true))()
-end)
-
-Blade:Label("Hold Block To spam | Only Mobile")
-
-Blade:Button("SadlekAski", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/AllusiveFree"))()
-end)
-
-Blade:Button("Vector Hub", function()
-_G.Mode = "English"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Tuxoz/VectorHub/main/MB*PC.lua"))()
-end)
-
-Blade:Button("Anti Banned", function()
-DiscordLib:Notification("Hub", "Load", "Close")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/anti"))()
-end)
-
-Blade:Button("Bedol (Update)", function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/corre.lua')))()
-end)
-
-Blade:Button("Fps Boost", function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/fpsboost')))()
-end)
-
-Blade:Button("Hosvlile | Auto Parry", function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/test.lua')))()
-end)
-
-Blade:Button("Bedol (Old)", function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/thembunlonquaaaaa')))()
-end)
-
-Blade:Button("Visual | Fake", function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/visualise')))()
-end)
-
-Blade:Button("Nexus", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/loadstring"))()
-end)
-
-Blade:Button("W-azure", function()
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fd07660d92cb26891e9acfab9f0c6ba4.lua"))()
-end)
-
-local MM = serv:Channel("Murder Mystery 2")
-
-MM:Button("Psxvoidyx", function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Psxvoidyx/Murdermysvoid2/main/Darkxyz23'),true))()
-end)
-
-MM:Button("Vynixu", function()
-loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
-end)
-
-MM:Button("Eclipse Hub", function()
-getgenv().mainKey = "nil";
-local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-end)
-    
-local WSD = serv:Channel("Weird Strict Dad")
-
-WSD:Button("InfinityMercury | script", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/InfinityMercury/Scripts/main/WeirdStrictDad/loader.lua",true))()
-end)
-
-local BF = serv:Channel("Blox Fruit")
-
-BF:Button("Blck Hub V2", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/onichanokaka'))()
-end)
-
-BF:Button("Hoho Hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HohoV2/main/ScriptLoad.lua"))()
-end)
-
-BF:Button("Hyper Hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/All-Script/main/bf.lua"))()
-end)
-
-BF:Button("Mukuro Hub", function()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
-end)
-
-BF:Button("Crimson Hub", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/TirSANX/CrimsonHUB/main/C_Loader'))()
-end)
-
-BF:Button("Adel Hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AdelOnTheTop/Adel-Hub/main/AdelBloxFruits.lua"))()
-end)
-
-BF:Button("Memaybeo Hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZPSXHUB/Z/main/MeMayBeo"))()
-end)
-
-BF:Button("MinhTriett | script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
-end)
-
-BF:Button("MinGamming | error", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGaming_MM.lua"))()
-end)
-
-BF:Button("Min Vietsub | error", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/MinVietsub'))()
-end)
-
-BF:Button("BF Menu | error", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/TUPERX/TUPERX/Main/MenuBF/README.md'))()
-end)
-
-BF:Button("Tulam2000 | error", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tulam2000/Min/main/Mindeptrai"))()
-end)
-
-BF:Button("Loli Hub V2 | Error", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyber-Nonename/LoliHubV2/main/V2LoliHub"))()
-end)
-
-BF:Button("Fruit Finder", function()
-collectAllFruit = true
-collectOnlyFruitSpawn = false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/BetaFruitFinder"))()
-end)
-
-BF:Button("HoHo V2", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/main/OldScriptLoad'))()
-end)
-
-BF:Button("KayMobile | Patch", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/AXCScript/KayMobile/main/Script-Loader'))()
-end)
-
-BF:Button("Auto Chest", function()
-    _G.Settings = {
-        Main = {
-            ["Start Auto Chest"] = true,
-            ["Stop Only Have Dark Key and God's Chaile"] = true,
-        },
-    }
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/NIGHTHUBONTOP/Main/main/AutoChest.lua')))()
-end)
-
-BF:Button("Auto Chest QR", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/qrquet/main/AutochesstVipQR"))()
-end)
-
-BF:Button("ThundarZ", function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/ThundarZ/Welcome/main/Main/Loader/AllGame.lua')))()
-end)
-
-local F = serv:Channel("Funky Friday")
-
-F:Button("Auto Play", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/RandomScript/main/FunkyFridayMobile"))()
-end)
-
-local ACS = serv:Channel("Anime Champions Simulator")
-
-ACS:Button("NameLess | script", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NamelessScripts/anime/main/champion"))()
-end)
-
-ACS:Button("NameLess | script", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NamelessScripts/anime/main/champion"))()
-end)
-
-ACS:Button("Yuto", function()
+ CS:Button("YuTo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Binintrozza/yutv2e/main/ACS"))()
-end)
-
-ACS:Button("Skyhub", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/SKOIXLL/RIVERHUB-SKYHUB/main/WL.lua'))()
 end)
 
 local AD = serv:Channel("Anime Adventures")

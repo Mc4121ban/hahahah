@@ -134,6 +134,11 @@ BF:Button("Tulam2000 | Error", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tulam2000/Min/main/Mindeptrai"))()
 end)
 
+BF:Button("Vector Hub", function()
+_G.Mode = "English"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tuxoz/VectorHub/main/MB*PC.lua"))()
+end)
+
 BF:Button("Loli Hub V2 | Error", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyber-Nonename/LoliHubV2/main/V2LoliHub"))()
 end)
@@ -201,7 +206,12 @@ end)
 Haze:Button("k bt script j", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/boku%20no%20pico"))()
 end)
-    
+
+Haze:Button("Vector Hub", function()
+_G.Mode = "English"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tuxoz/VectorHub/main/MB*PC.lua"))()
+end)
+
 Haze:Button("Hyper Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/All-Script/main/hp.lua"))()
 end)

@@ -141,6 +141,10 @@ end)
 
 local BF = serv:Channel("Blox Fruit")
 
+BF:Button("Auto Bounty", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Mc4121ban/hahahah/main/AutoBounty'))()
+end)
+
 BF:Button("Master Hub", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/onichanokaka'))()
 end)

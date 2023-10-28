@@ -1,24 +1,18 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/myshitmontage"))()
-local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/Bedol_X/main/source.lua"))()
+local NEVERLOSE = loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/NEVERLOSE-UI-Nightly/main/source.lua"))()
+NEVERLOSE:Theme("dark")
+local Window = NEVERLOSE:AddWindow("Panda Hub","Beta Tester")
+local Notification = NEVERLOSE:Notification()
+Notification.MaxNotifications = 6
 
-local window = UI:Window("Panda Hub","Beta Tester")
+Window:AddTabLabel('Main')
+local AutoParryTab = Window:AddTab('AutoParry','ads') -- [ads , list , folder , earth , locked , home , mouse , user]
 
-window.TOGGLE_KEY = Enum.KeyCode.X
+local AutoParryTab = AutoParryTab:AddSection('AutoParry',"left")
 
+AutoParryTab:AddLabel("Auto Parry Auto Enbled")
 
-window:SetRGBShadow(0.001)
-
-window:SetCustomMouse(true)
-
-
-local Maintab = window:Tab('Main')
-local Uptab = window:Tab('Update')
-
-Maintab:AddTitle('AutoParry Auto Enbled')
-
-Maintab:NewToggle('Rage Parry (Coming Soon)',false,function(b)
-	print(b)
+AutoParryTab:AddToggle('Rage Auto Parry(coming soon)',false,function(val)
+	print("Toggle",val)
 end)
 
-Uptab:AddTitle('Beta Tester')
-Uptab:AddTitle('none')
+AutoParryTab:AddLabel("Discord : doitenroi.9941")

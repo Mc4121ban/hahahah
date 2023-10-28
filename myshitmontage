@@ -53,9 +53,8 @@ Balls.ChildAdded:Connect(function(Ball)
             local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
             local Velocity = (OldPosition - Ball.Position).Magnitude 
         
-            if (Distance / Velocity) <= 11 then
+            if (Distance / Velocity) <= 12 then
                 Parry()
-                task.wait()
         end
    end
         if (tick() - OldTick >= 1/60) then
@@ -78,7 +77,7 @@ Balls.ChildAdded:Connect(function(Ball)
             local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
             local Velocity = (OldPosition - Ball.Position).Magnitude 
         
-            if (Distance / Velocity) <= 3 then
+            if (Distance / Velocity) <= 2 then
                wait(0.2)
             RParry()
             RParry()

@@ -99,11 +99,7 @@ Balls.ChildAdded:Connect(function(Ball)
             local Velocity = (OldPosition - Ball.Position).Magnitude 
         
             if (Distance / Velocity) <= 1 then
-            wait(0.12)
-            RParry()
-            RParry()
-            RParry()
-            RParry()
+            wait()
             RParry()
           end
    end

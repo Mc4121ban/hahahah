@@ -78,6 +78,7 @@ Balls.ChildAdded:Connect(function(Ball)
             RParry()
             RParry()
             RParry()
+            RParry()
           end
    end
         if (tick() - OldTick >= 1/55) then

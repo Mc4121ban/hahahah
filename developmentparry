@@ -76,6 +76,8 @@ Balls.ChildAdded:Connect(function(Ball)
             RParry()
             RParry()
             RParry()
+            RParry()
+            RParry()
           end
    end
         if (tick() - OldTick >= 1/55) then
@@ -100,6 +102,8 @@ Balls.ChildAdded:Connect(function(Ball)
         
             if (Distance / Velocity) <= 1 then
             wait()
+            RParry()
+            RParry()
             RParry()
             RParry()
             RParry()

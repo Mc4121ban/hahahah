@@ -30,12 +30,6 @@ local args = {
            game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
 end
 
-local function FParry()
-    Remotes:WaitForChild("ParryButtonPress"):Fire()
-    Remotes:WaitForChild("ParryButtonPress"):Fire()
-    Remotes:WaitForChild("ParryButtonPress"):Fire()
-end
-
 local function Parry()
     Remotes:WaitForChild("ParryButtonPress"):Fire()
 end
@@ -55,6 +49,7 @@ Balls.ChildAdded:Connect(function(Ball)
         
             if (Distance / Velocity) <= 12 then
                 Parry()
+                task.wait()
         end
    end
         if (tick() - OldTick >= 1/60) then
@@ -78,24 +73,77 @@ Balls.ChildAdded:Connect(function(Ball)
             local Velocity = (OldPosition - Ball.Position).Magnitude 
         
             if (Distance / Velocity) <= 2 then
-               wait(0.1)
-            FParry()
+            wait(0.02)
             RParry()
             RParry()
             RParry()
-            FParry()
             RParry()
             RParry()
             RParry()
-            FParry()
-            RParry()
-            RParry()
-            FParry()
-            RParry()
-            RParry()
-              end
+          end
    end
-        if (tick() - OldTick >= 1/60) then
+        if (tick() - OldTick >= 1/40) then
+            OldTick = tick()
+            OldPosition = Ball.Position
+        end
+    end)
+end)
+
+Balls.ChildAdded:Connect(function(Ball)
+    if not VerifyBall(Ball) then
+        return
+    end
+    
+    local OldPosition = Ball.Position
+    local OldTick = tick()
+    
+    Ball:GetPropertyChangedSignal("Position"):Connect(function()
+        if IsTarget() then
+            local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
+            local Velocity = (OldPosition - Ball.Position).Magnitude 
+        
+            if (Distance / Velocity) <= 1 then
+            wait(0.1)
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+            RParry()
+          end
+   end
+        if (tick() - OldTick >= 1/30) then
             OldTick = tick()
             OldPosition = Ball.Position
         end

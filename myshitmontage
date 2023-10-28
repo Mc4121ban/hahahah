@@ -28,19 +28,6 @@ local args = {
     }
 }
            game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
-
-local args = {
-[1] = 1.5,
-[2] = CFrame.new(-282.66534423828125, 119.49650573730469, -178.448486328125) * CFrame.Angles(-0.26179957389831543, 0, -0),
-[3] = {
- ["5099463143"] = Vector3.new(437, 190.51422119140625, 26.312973022460938)
-          },
-[4] = {
-[1] = 781,
-[2] = 147
-    }
-}
-           game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
 end
 
 local function Parry()
@@ -60,7 +47,7 @@ Balls.ChildAdded:Connect(function(Ball)
             local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
             local Velocity = (OldPosition - Ball.Position).Magnitude 
         
-            if (Distance / Velocity) <= 13 then
+            if (Distance / Velocity) <= 15 then
                 Parry()
                 task.wait()
         end
@@ -87,33 +74,6 @@ Balls.ChildAdded:Connect(function(Ball)
         
             if (Distance / Velocity) <= 3 then
                wait()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
             RParry()
             RParry()
             RParry()

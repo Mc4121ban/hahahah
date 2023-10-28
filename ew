@@ -1,12 +1,18 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/myshitmontage"))()
+
 local NEVERLOSE = loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/NEVERLOSE-UI-Nightly/main/source.lua"))()
+
 NEVERLOSE:Theme("dark")
+
 local Window = NEVERLOSE:AddWindow("Panda Hub","Beta Tester")
+
 local Notification = NEVERLOSE:Notification()
+
 Notification.MaxNotifications = 6
 
 Window:AddTabLabel('Main')
-local AutoParryTab = Window:AddTab('AutoParry','ads') -- [ads , list , folder , earth , locked , home , mouse , user]
+
+local AutoParryTab = Window:AddTab('AutoParry','ads')
 
 local AutoParryTab = AutoParryTab:AddSection('AutoParry',"left")
 

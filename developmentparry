@@ -47,11 +47,11 @@ Balls.ChildAdded:Connect(function(Ball)
             local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
             local Velocity = (OldPosition - Ball.Position).Magnitude 
         
-            if (Distance / Velocity) <= 13 then
+            if (Distance / Velocity) <= 12 then
                 Parry()
         end
    end
-        if (tick() - OldTick >= 1/60) then
+        if (tick() - OldTick >= 1/70) then
             OldTick = tick()
             OldPosition = Ball.Position
         end
@@ -72,16 +72,14 @@ Balls.ChildAdded:Connect(function(Ball)
             local Velocity = (OldPosition - Ball.Position).Magnitude 
         
             if (Distance / Velocity) <= 3 then
-            wait()
-            RParry()
-            RParry()
+            wait(0.0000000000000000000000000001)
             RParry()
             RParry()
             RParry()
             RParry()
           end
    end
-        if (tick() - OldTick >= 1/55) then
+        if (tick() - OldTick >= 1/60) then
             OldTick = tick()
             OldPosition = Ball.Position
         end
@@ -98,11 +96,13 @@ Balls.ChildAdded:Connect(function(Ball)
     
     Ball:GetPropertyChangedSignal("Position"):Connect(function()
         if IsTarget() then
-            local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
+            local Distance =
+
+(Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
             local Velocity = (OldPosition - Ball.Position).Magnitude 
         
             if (Distance / Velocity) <= 1 then
-            wait()
+            wait(0.0000000000000000001)
             RParry()
             RParry()
             RParry()

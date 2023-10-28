@@ -1,0 +1,24 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/myshitmontage"))()
+local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/Bedol_X/main/source.lua"))()
+
+local window = UI:Window("Panda Hub","Beta Tester")
+
+window.TOGGLE_KEY = Enum.KeyCode.X
+
+
+window:SetRGBShadow(0.001)
+
+window:SetCustomMouse(true)
+
+
+local Maintab = window:Tab('Main')
+local Uptab = window:Tab('Update')
+
+Maintab:AddTitle('AutoParry Auto Enbled')
+
+Maintab:NewToggle('Rage Parry (Coming Soon)',false,function(b)
+	print(b)
+end)
+
+Uptab:AddTitle('Beta Tester')
+Uptab:AddTitle('none')

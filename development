@@ -4,7 +4,7 @@ local NEVERLOSE = loadstring(game:HttpGet("https://raw.githubusercontent.com/334
 
 NEVERLOSE:Theme("dark")
 
-local Window = NEVERLOSE:AddWindow("Panda Hub","development")
+local Window = NEVERLOSE:AddWindow("Bedol Hub","")
 
 local Notification = NEVERLOSE:Notification()
 

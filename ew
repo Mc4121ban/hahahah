@@ -14,7 +14,7 @@ Window:AddTabLabel('Main')
 
 local AutoParryTab = Window:AddTab('AutoParry','ads')
 
-local AutoParryTab = AutoParryTab:AddSection('AutoParry',"left")
+local AutoParryTab = Tab:AddSection('AutoParry',"left")
 
 AutoParryTab:AddLabel("Auto Parry Auto Enbled")
 

@@ -72,7 +72,8 @@ Balls.ChildAdded:Connect(function(Ball)
             local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
             local Velocity = (OldPosition - Ball.Position).Magnitude 
         
-            if (Distance / Velocity) <= 2 then
+            if (Distance / Velocity) <= 1 then
+                RParry()
                 RParry()
                 RParry()
                 RParry()

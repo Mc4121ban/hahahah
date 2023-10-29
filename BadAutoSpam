@@ -55,7 +55,7 @@ Balls.ChildAdded:Connect(function(Ball)
                 RParry()
         end
    end
-        if (tick() - OldTick >= 1/55) then
+        if (tick() - OldTick >= 1/70) then
             OldTick = tick()
             OldPosition = Ball.Position
         end

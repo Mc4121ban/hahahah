@@ -56,7 +56,7 @@ Balls.ChildAdded:Connect(function(Ball)
                 Parry()
         end
    end
-        if (tick() - OldTick >= 1/70) then
+        if (tick() - OldTick >= 1/60) then
             OldTick = tick()
             OldPosition = Ball.Position
         end

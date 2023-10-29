@@ -47,12 +47,12 @@ Balls.ChildAdded:Connect(function(Ball)
             local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
             local Velocity = (OldPosition - Ball.Position).Magnitude 
         
-            if (Distance / Velocity) <= 16 then
+            if (Distance / Velocity) <= 17 then
                 Parry()
                 return
         end
    end
-        if (tick() - OldTick >= 1/60) then
+        if (tick() - OldTick >= 1/65) then
             OldTick = tick()
             OldPosition = Ball.Position
         end

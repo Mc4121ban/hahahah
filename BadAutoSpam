@@ -1,3 +1,13 @@
+Rayfield:Notify({
+   Title = "test",
+   Content = "Load Auto Spam",
+   Duration = 6.5,
+   Image = 4483362458,
+      end
+   },
+},
+})
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 
@@ -47,7 +57,7 @@ Balls.ChildAdded:Connect(function(Ball)
             local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
             local Velocity = (OldPosition - Ball.Position).Magnitude 
         
-            if (Distance / Velocity) <= 4 then
+            if (Distance / Velocity) <= 2 then
                 wait()
                 RParry()
                 RParry()
@@ -55,7 +65,7 @@ Balls.ChildAdded:Connect(function(Ball)
                 RParry()
         end
    end
-        if (tick() - OldTick >= 1/50) then
+        if (tick() - OldTick >= 1/80) then
             OldTick = tick()
             OldPosition = Ball.Position
         end

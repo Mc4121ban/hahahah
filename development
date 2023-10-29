@@ -1,17 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/developmentparry"))()
 
-shared.config = {
-   adjustment = 4.5,
-   hit_range = 0.5,
-
-   mode = 'Always',
-   deflect_type = 'Remote',
-   notifications = false,
-   keybind = Enum.KeyCode.E
-}
-
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/cunning-sys/meowmeowscripts/main/bladeball.lua'),true))()
-
 local NEVERLOSE = loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/NEVERLOSE-UI-Nightly/main/source.lua"))()
 
 NEVERLOSE:Theme("dark")

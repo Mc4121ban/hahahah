@@ -34,6 +34,11 @@ local function Parry()
     Remotes:WaitForChild("ParryButtonPress"):Fire()
 end
 
+local function SParry()
+    Remotes:WaitForChild("ParryButtonPress"):Fire()
+    Remotes:WaitForChild("ParryButtonPress"):Fire()
+end
+
 Balls.ChildAdded:Connect(function(Ball)
     if not VerifyBall(Ball) then
         return
@@ -50,9 +55,9 @@ Balls.ChildAdded:Connect(function(Ball)
             if (Distance / Velocity) <= 3 then
                 wait()
                 RParry()
+                SParry()
                 RParry()
-                RParry()
-                RParry()
+                SParry()
                 RParry()
         end
    end

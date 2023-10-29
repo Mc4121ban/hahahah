@@ -1,7 +1,7 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/developmentparry"))()
 
 shared.config = {
-   adjustment = 3.7,
+   adjustment = 4.5,
    hit_range = 0.5,
 
    mode = 'Always',

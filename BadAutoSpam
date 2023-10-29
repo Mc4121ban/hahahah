@@ -1,14 +1,3 @@
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3AArrayfield%20Library'))()
-Rayfield:Notify({
-   Title = "test",
-   Content = "Load Auto Spam",
-   Duration = 6.5,
-   Image = 4483362458,
-      end
-   },
-},
-})
-
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 

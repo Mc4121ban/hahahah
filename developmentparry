@@ -30,10 +30,6 @@ local args = {
            game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
 end
 
-local function Parry()
-    Remotes:WaitForChild("ParryButtonPress"):Fire()
-end
-
 Balls.ChildAdded:Connect(function(Ball)
     if not VerifyBall(Ball) then
         return
@@ -47,67 +43,8 @@ Balls.ChildAdded:Connect(function(Ball)
             local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
             local Velocity = (OldPosition - Ball.Position).Magnitude 
         
-            if (Distance / Velocity) <= 12 then
-                Parry()
-        end
-   end
-        if (tick() - OldTick >= 1/70) then
-            OldTick = tick()
-            OldPosition = Ball.Position
-        end
-    end)
-end)
-
-Balls.ChildAdded:Connect(function(Ball)
-    if not VerifyBall(Ball) then
-        return
-    end
-    
-    local OldPosition = Ball.Position
-    local OldTick = tick()
-    
-    Ball:GetPropertyChangedSignal("Position"):Connect(function()
-        if IsTarget() then
-            local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
-            local Velocity = (OldPosition - Ball.Position).Magnitude 
-        
-            if (Distance / Velocity) <= 3 then
-            wait(0.0000000000000000000000000001)
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-          end
-   end
-        if (tick() - OldTick >= 1/60) then
-            OldTick = tick()
-            OldPosition = Ball.Position
-        end
-    end)
-end)
-
-Balls.ChildAdded:Connect(function(Ball)
-    if not VerifyBall(Ball) then
-        return
-    end
-    
-    local OldPosition = Ball.Position
-    local OldTick = tick()
-    
-    Ball:GetPropertyChangedSignal("Position"):Connect(function()
-        if IsTarget() then
-            local Distance =
-
-(Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
-            local Velocity = (OldPosition - Ball.Position).Magnitude 
-        
-            if (Distance / Velocity) <= 1 then
-            wait(0.0000000000000000001)
-            RParry()
-            RParry()
-            RParry()
-            RParry()
-            RParry()
+            if (Distance / Velocity) <= 2 then
+            wait(0.2)
             RParry()
             RParry()
             RParry()

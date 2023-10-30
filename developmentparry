@@ -95,7 +95,7 @@ Balls.ChildAdded:Connect(function(Ball)
             print(`Distance: {Distance}\nVelocity: {Velocity}\nTime: {Distance / Velocity}`)
         
             if (Distance / Velocity) <= 2 then 
-                 wait(0.5)
+                 wait(0.3)
                  Parry()
                  Parry()
                  Parry()
@@ -150,7 +150,7 @@ end)
             
             print(`Distance: {Distance}\nVelocity: {Velocity}\nTime: {Distance / Velocity}`)
         
-            if (Distance / Velocity) <= 2 then 
+            if (Distance / Velocity) <= 1 then 
                  wait()
                  Parry()
                  Parry()

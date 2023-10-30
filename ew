@@ -1,25 +1,7 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "Script Loader",
+Text = "", 
+Duration = 6
+})
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/hahahah/main/developmentparry"))()
-
-local NEVERLOSE = loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/NEVERLOSE-UI-Nightly/main/source.lua"))()
-
-NEVERLOSE:Theme("dark")
-
-local Window = NEVERLOSE:AddWindow("Panda Hub","Beta Tester")
-
-local Notification = NEVERLOSE:Notification()
-
-Notification.MaxNotifications = 6
-
-Window:AddTabLabel('Main')
-
-local AutoParryTab = Window:AddTab('AutoParry','ads')
-
-local AutoParryTab = Tab:AddSection('AutoParry',"left")
-
-AutoParryTab:AddLabel("Auto Parry Auto Enbled")
-
-AutoParryTab:AddToggle('Rage Auto Parry(coming soon)',false,function(val)
-	print("Toggle",val)
-end)
-
-AutoParryTab:AddLabel("Discord : doitenroi.9941")

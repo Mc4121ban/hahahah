@@ -136,6 +136,10 @@ Balls.ChildAdded:Connect(function(Ball)
                  wait()
                  Parry()
                  Parry()
+                 Parry()
+                 Parry()
+                 Parry()
+                 Parry()
 end
         end
         

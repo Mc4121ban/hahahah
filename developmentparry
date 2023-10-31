@@ -39,6 +39,8 @@ local function Parry() -- Parries.
 
                  game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
                  game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
+                 game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
+                 game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
 end   
 
  local function NParry()

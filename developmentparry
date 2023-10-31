@@ -105,10 +105,7 @@ Balls.ChildAdded:Connect(function(Ball)
                  wait()
                  Parry()
                  Parry()
-                 Parry()
-                 Parry()
-                 Parry()
-            end
+end
         end
         
         if (tick() - OldTick >= 0/3) then -- Don't want it to update too quickly because my velocity implementation is aids. Yes, I tried Ball.Velocity. No, it didn't work.
@@ -117,3 +114,35 @@ Balls.ChildAdded:Connect(function(Ball)
         end
     end)
 end)
+
+Balls.ChildAdded:Connect(function(Ball)
+    if not VerifyBall(Ball) then
+        return
+    end
+    
+    print(`Ball Spawned: {Ball}`)
+    
+    local OldPosition = Ball.Position
+    local OldTick = tick()
+    
+    Ball:GetPropertyChangedSignal("Position"):Connect(function()
+        if IsTarget() then -- No need to do the math if we're not being attacked.
+            local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
+            local Velocity = (OldPosition - Ball.Position).Magnitude -- Fix for .Velocity not working. Yes I got the lowest possible grade in accuplacer math.
+            
+            print(`Distance: {Distance}\nVelocity: {Velocity}\nTime: {Distance / Velocity}`)
+        
+            if (Distance / Velocity) <= 2 then 
+                 wait()
+                 Parry()
+                 Parry()
+end
+        end
+        
+        if (tick() - OldTick >= 0/3) then -- Don't want it to update too quickly because my velocity implementation is aids. Yes, I tried Ball.Velocity. No, it didn't work.
+            OldTick = tick()
+            OldPosition = Ball.Position
+        end
+    end)
+end)
+

@@ -38,16 +38,9 @@ local function Parry() -- Parries.
 }
 
                  game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
-                 game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
-                 game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
-                 game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
-                 game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
-                 game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
-                 game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
-                 game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
-end   
+end
 
- local function NParry()
+local function NParry()
     Remotes:WaitForChild("ParryButtonPress"):Fire()
 end 
 
@@ -133,13 +126,13 @@ Balls.ChildAdded:Connect(function(Ball)
             print(`Distance: {Distance}\nVelocity: {Velocity}\nTime: {Distance / Velocity}`)
         
             if (Distance / Velocity) <= 2 then 
-                 wait()
+                 wait(1.5)
                  Parry()
                  Parry()
                  Parry()
                  Parry()
                  Parry()
-                 Parry()
+                 
 end
         end
         

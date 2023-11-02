@@ -38,6 +38,20 @@ local function Parry() -- Parries.
 }
 
                  game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
+
+       local args = {
+                     [1] = 1.5,
+                     [2] = CFrame.new(-282.66534423828125, 119.49650573730469, -178.448486328125) * CFrame.Angles(-0.26179957389831543, 0, -0),
+                     [3] = {
+                     ["5099463143"] = Vector3.new(437, 190.51422119140625, 26.312973022460938)
+          },
+                     [4] = {
+                     [1] = 781,
+                     [2] = 147
+    }
+}
+
+                 game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
 end
 
 local function NParry()
@@ -63,13 +77,12 @@ Balls.ChildAdded:Connect(function(Ball)
             
             print(`Distance: {Distance}\nVelocity: {Velocity}\nTime: {Distance / Velocity}`)
         
-            if (Distance / Velocity) <= 16 then -- Sorry for the magic number. This just works. No, you don't get a slider for this because it's 2am.
+            if (Distance / Velocity) <= 12 then -- Sorry for the magic number. This just works. No, you don't get a slider for this because it's 2am.
                 NParry()
-                return
             end
         end
         
-        if (tick() - OldTick >= 0/70) then -- Don't want it to update too quickly because my velocity implementation is aids. Yes, I tried Ball.Velocity. No, it didn't work.
+        if (tick() - OldTick >= 0/60) then -- Don't want it to update too quickly because my velocity implementation is aids. Yes, I tried Ball.Velocity. No, it didn't work.
             OldTick = tick()
             OldPosition = Ball.Position
         end
@@ -93,17 +106,51 @@ Balls.ChildAdded:Connect(function(Ball)
             
             print(`Distance: {Distance}\nVelocity: {Velocity}\nTime: {Distance / Velocity}`)
         
-            if (Distance / Velocity) <= 3 then
-                 wait(0.7)
+            if (Distance / Velocity) <= 2 then
+                 wait(1)
+                 NParry()
                  Parry()
-                 Parry()
-                 Parry()
+                 NParry()
 end
         end
         
-        if (tick() - OldTick >= 0/1) then -- Don't want it to update too quickly because my velocity implementation is aids. Yes, I tried Ball.Velocity. No, it didn't work.
+        if (tick() - OldTick >= 0/60) then -- Don't want it to update too quickly because my velocity implementation is aids. Yes, I tried Ball.Velocity. No, it didn't work.
             OldTick = tick()
             OldPosition = Ball.Position
         end
     end)
-end) 
+end)  
+
+Balls.ChildAdded:Connect(function(Ball)
+    if not VerifyBall(Ball) then
+        return
+    end
+    
+    print(`Ball Spawned: {Ball}`)
+    
+    local OldPosition = Ball.Position
+    local OldTick = tick()
+    
+    Ball:GetPropertyChangedSignal("Position"):Connect(function()
+        if IsTarget() then -- No need to do the math if we're not being attacked.
+            local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
+            local Velocity = (OldPosition - Ball.Position).Magnitude -- Fix for .Velocity not working. Yes I got the lowest possible grade in accuplacer math.
+            
+            print(`Distance: {Distance}\nVelocity: {Velocity}\nTime: {Distance / Velocity}`)
+        
+            if (Distance / Velocity) <= 1 then
+                 wait(1)
+                 NParry()
+                 Parry()
+                 Parry()
+                 Parry()
+                 NParry()
+end
+        end
+        
+        if (tick() - OldTick >= 0/60) then -- Don't want it to update too quickly because my velocity implementation is aids. Yes, I tried Ball.Velocity. No, it didn't work.
+            OldTick = tick()
+            OldPosition = Ball.Position
+        end
+    end)
+end)  

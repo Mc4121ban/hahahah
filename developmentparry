@@ -11,6 +11,8 @@ local Players = game:GetService("Players")
 local Player = Players.LocalPlayer or Players.PlayerAdded:Wait()
 local Remotes = ReplicatedStorage:WaitForChild("Remotes", 9e9) -- A second argument in waitforchild what could it mean?
 local Balls = workspace:WaitForChild("Balls", 9e9)
+local lastSpamTime = 0
+local spamInterval = 0
 
 -- Functions
 
@@ -86,8 +88,8 @@ local args = {
     }
 }
            game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
-      end
 
+end
 -- The actual code
 
 
@@ -135,43 +137,15 @@ Balls.ChildAdded:Connect(function(Ball)
             local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
             local Velocityx = (OldPosition - Ball.Position).Magnitude
 
+
             if (Distance / Velocityx) <= 6 then
-              wait(1)
               Parry2()
-              task.wait(0.2)
+              Parry()
+              lastSpamTime = 919191919191919191
             end
         end
         
         if (tick() - OldTick >= 0/1) then -- Don't want it to update too quickly because my velocity implementation is aids. Yes, I tried Ball.Velocity. No, it didn't work.
-            OldTick = tick()
-            OldPosition = Ball.Position
-        end
-    end)
-end)
-
-Balls.ChildAdded:Connect(function(Ball)
-    if not VerifyBall(Ball) then
-        return
-    end
-    
-    print(`Ball Spawned: {Ball}`)
-    
-    local OldPosition = Ball.Position
-    local OldTick = tick()
-    
-    Ball:GetPropertyChangedSignal("Position"):Connect(function()
-        if IsTarget() then
-            local Distance = (Ball.Position - workspace.CurrentCamera.Focus.Position).Magnitude
-            local Velocityz = (OldPosition - Ball.Position).Magnitude
-        
-            if (Distance / Velocityz) <= 2 then
-              wait()
-              Parry2()
-              Parry()
-            end
-        end
-        
-        if (tick() - OldTick >= 0/80) then -- Don't want it to update too quickly because my velocity implementation is aids. Yes, I tried Ball.Velocity. No, it didn't work.
             OldTick = tick()
             OldPosition = Ball.Position
         end

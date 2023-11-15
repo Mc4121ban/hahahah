@@ -54,7 +54,7 @@ local Window = Rayfield:CreateWindow({
       Invite = "zvrK8df8Wj",
       RememberJoins = true
    },
-   KeySystem = true,
+   KeySystem = false,
    KeySettings = {
       Title = "Allusive Scripts",
       Subtitle = "Key System",
@@ -100,7 +100,7 @@ local function chooseNewFocusedBall()
 
     if focusedBall == nil then
         print("Debug: Could not find a ball that's the realBall or has a target.")
-        wait(1)
+        wait(3)
         chooseNewFocusedBall()
     end
     return focusedBall
@@ -181,7 +181,7 @@ local function checkBallDistance()
 
     if distanceToPlayer < 15 then
         parryButtonPress:Fire()
-        task.wait()
+        task.wait(0.5)
 end
 
     if timeUntilImpact(ball.Velocity, distanceToPlayer, charVel) < getDynamicThreshold(ballVelocityTowardsPlayer) then
@@ -203,7 +203,7 @@ end
             if notifyparried == true then
                 notify("Auto Parry", "Automatically Parried Ball", 0.3)
             end
-            task.wait(0.3)
+            task.wait(0.5)
         end
     end
 end
